@@ -7,18 +7,30 @@ import { useGLTF } from "@react-three/drei";
 import { MeshBasicMaterial } from "three";
 import { Vector3 } from "three";
 import { Html } from "@react-three/drei";
-import CorgiSitting from './CorgiSitting'
 import CorgiMounts from "./Corgi_mounts";
+import globalState from "./stores/globalState";
 
 export function Model(props) {
   const { nodes, materials } = useGLTF("/fantasyLand.glb");
-
   const crownRef = useRef()
-
+  
+  const setModalSettings = globalState((state) => state.setModalSettings)
+  const setInputModalSettings = globalState((state) => state.setInputModalSettings)
+  
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
-        <CorgiMounts position={[4,0,0.25]} scale={0.004}/>
+        <CorgiMounts 
+          position={[3.60, 2.5, 0.65]} 
+          scale={0.004}
+          onClick={() => setModalSettings([
+            '/hoodiePic.JPG',
+            'Mofin the Great Corgo,',
+            'Como sabes, corgis are goated y they deserve everything in the world. However, la primera vez que salimos, mi ultra mega slick rizz fue interrumpido por otro animal que fue the highlight of the night. Which animal was it?. Cuando sepas el answer clickea el Fantasma del Fantasmeo y escribe the answer.',
+            'primary',
+            'Onwards Compa...',
+            true,
+          ])}/>
         <group
           position={[-1.1, -0.39, 0.15]}
           rotation={[-1.5, -0.11, 3.11]}
@@ -246,6 +258,265 @@ export function Model(props) {
           />
         </group>
         <group
+          position={[4.28, -0.16, 0.21]}
+          rotation={[Math.PI / 2, 0, 0]}
+          scale={0.3}
+        >
+          <group
+            position={[0.15, 1.66, 0.15]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material"].geometry}
+              material={new MeshBasicMaterial(materials.Ghost)}
+              onPointerEnter={(event) => {
+                event.stopPropagation()
+                event.eventObject.scale.set(1.07, 1.07, 1.07)
+                event.eventObject.material.color.set('cyan')
+              }}
+              onPointerLeave={(event) => {
+                event.eventObject.scale.set(1/1.07, 1/1.07, 1/1.07)
+                event.eventObject.material = new MeshBasicMaterial(materials.Ghost)
+              }}
+              onClick={() => {
+                setInputModalSettings([
+                '/oop.jpeg', 
+                'Fantasma del Fantasmeo: What is the answer?', 
+                'Vamos a ver si esas neuronas todavía se acuerdan del Great Sanju Fumble of March 19th, 2022.', 
+                ['gato', 'Gato', 'cat', 'Cat'],
+                true,])
+                setModalSettings([
+                  '/overload.jpeg',
+                  'Fantasma del Fantasmeo,',
+                  'You got it right, felicidades! Te acuerdas de todas esas noches de la semana pasada que me tardaba en llamarte, this is what I was doing. Pero you could say que ya "Aquí no hay fantasmeo" (jaja funny laugh). Averigua de dónde es ese quote and what is the username de la cuenta whose bio says that? Cuando estés lista clickea en el House of Shrooms',
+                  'secondary',
+                  'Bon Voyage...',
+                  false,
+                ])
+              }}
+            />
+          </group>
+          <group
+            position={[0.88, 2.63, 0.18]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material001"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[-1.08, 1.41, 0.53]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material002"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[-1.03, 2.5, -0.01]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material003"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[0.94, 1.75, -0.27]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material004"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[0.66, 1.19, -0.7]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material005"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[-1.05, 1.72, -0.22]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material006"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[0.64, 0.89, 0.34]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material007"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[-0.63, 1.8, -0.73]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material008"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[0.65, 1.29, 0.04]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material009"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[0.64, 1.27, 0.05]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material010"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[0.77, 1.46, 0.02]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material011"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[0.66, 1.58, 0.02]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material012"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[0.59, 1.38, 0.22]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material013"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[-0.51, 1.17, 0.34]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material014"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[-0.41, 1.33, 0.4]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material015"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[-0.49, 1.44, 0.33]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material016"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[-0.65, 1.25, 0.45]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material017"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+          <group
+            position={[-0.52, 1.16, 0.38]}
+            rotation={[-Math.PI / 2, 0, 0]}
+            scale={8.06}
+          >
+            <mesh
+              castShadow
+              receiveShadow
+              geometry={nodes["Ghost_NFT-material018"].geometry}
+              material={materials.Ghost}
+            />
+          </group>
+        </group>
+        <group
           position={[-1.76, 2.15, 1.48]}
           rotation={[-1.46, -0.98, 3.06]}
           scale={0.001}
@@ -313,7 +584,7 @@ export function Model(props) {
         <group
           position={[1.64, 0.05, 0.18]}
           rotation={[0, 0, 0.58]}
-          scale={[0.06, 0.06, 0.02]}
+          scale={[0.09, 0.09, 0.03]}
         >
           <mesh
             onPointerEnter={(event) => {
@@ -324,6 +595,22 @@ export function Model(props) {
             onPointerLeave={(event) => {
               event.eventObject.scale.set(1/1.07, 1/1.07, 1/1.07)
               event.eventObject.material = new MeshBasicMaterial(materials["birch_red_mat.001"])
+            }}
+            onClick={() => {
+              setInputModalSettings([
+              '/creme.jpg', 
+              'House of Shrooms: What is the answer?', 
+              'Voy a ti you got this └(＾＾)┐', 
+              ['TOTASPR', '@cremebruleelovers470', 'cremebruleelovers470', 'totaspr'],
+              true,])
+              setModalSettings([
+                '/arrebato.JPG',
+                'House of Shrooms,',
+                'Second in a row? Woot Woot! Bienvenida al House of Shrooms. Drugs, sometimes we love them, sometimes we hate them.',
+                'primary',
+                '(⌐■_■)',
+                false,
+              ])
             }}
             castShadow
             receiveShadow

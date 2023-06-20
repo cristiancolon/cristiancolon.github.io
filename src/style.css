@@ -164,8 +164,8 @@ body,
   
   .closeBtn {
     position: fixed;
-    top: 8px;
-    right: 8px;
+    top: 3px;
+    right: 1px;
   }
   
   .content {
@@ -179,7 +179,7 @@ body,
   
   .btnContainer{
     position: absolute;
-    left: 50%;
+    left: 50%
   }
   .btnPrimary {
     background-color: #411b57;
@@ -189,4 +189,13 @@ body,
   .bold {
     font-weight: 600;
   }
+
+  .textField{
+    margin-right: 5px;
+  }
+
+  .inputBtn
+{
+    margin-left: 5px;
+}
   

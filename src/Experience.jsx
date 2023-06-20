@@ -10,7 +10,6 @@ export default function Experience()
     const directionalLight = useRef()
 
 
-
     const lightLocation = globalState((state) => state.lightLocation)
 
     useFrame ( (state, deltaTime) =>

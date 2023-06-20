@@ -3,6 +3,38 @@ import {create} from 'zustand'
 export default create((set) =>
 {
     return {
+        modalSettings: [
+            '/fotoJuntos.jpeg', 
+            'Helloooo', 
+            'Como no puedo estar contigo en tu día, te hice un regalito virtual. Un virtual scavenger hunt. Begin by clicking on Mofin the Corgi.', 
+            'secondary', 
+            'Good Luck y Happy Bday ♡',
+            true,
+        ],
+        setModalSettings: (array) =>
+        {
+            set(() =>
+            {
+                return { modalSettings: array }
+            })
+        },
+        
+        inputModalSettings: [
+            '/oop.jpeg', 
+            'Fantasma del Fantasmeo,', 
+            'Vamos a ver si esas neuronas todavía se acuerdan del Great Fumble of March 19th.', 
+            ['gato', 'Gato', 'cat', 'Cat'],
+            false,
+        ],
+        setInputModalSettings: (array) =>
+        {
+            set(() =>
+            {
+                return { inputModalSettings: array }
+            })
+        },
+
+
         torusRotX: 0,
         torusRotY: 0,
         torusRotZ: 0,

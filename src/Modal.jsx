@@ -1,7 +1,7 @@
 import React from "react";
-import fotoJuntos from "/fotoJuntos.jpeg"
 import { Button } from "@mui/material";
-export default function Modal({open, onClose})
+
+export default function Modal({picture, header, message, buttonColor, buttonMessage, open, onClose})
 {
     if (!open)
     {
@@ -10,15 +10,18 @@ export default function Modal({open, onClose})
     return (
         <div className="overlay">
             <div className="modalContainer">
-                <img src={fotoJuntos} alt=""/>
+                <img src={picture} alt=""/>
                 <div className="modalRight">
+                    <div className="closeBtn">
+                        <Button variant="text" onClick={onClose}>X</Button>
+                    </div>
                     <div className="content">
-                        <h2>Saludos Srta. Favianna,</h2>
-                        <p>Como no me encuentro con usted en este día tan especial, le hice un pequeño regalo. Un virtual scavenger hunt.</p>
+                        <h2>{header}</h2>
+                        <p>{message}</p>
                     </div>
                     <div className="btnContainer">
-                        <Button color="secondary" variant="outlined" className="btnPrimary" onClick={onClose}>
-                            <span className="bold">Good Luck y Happy Bday ♡</span>
+                        <Button color={buttonColor} variant="outlined" className="btnPrimary" onClick={onClose}>
+                            <span className="bold">{buttonMessage}</span>
                         </Button>
                     </div>
                 </div>
