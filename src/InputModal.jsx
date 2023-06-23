@@ -30,7 +30,7 @@ export default function InputModal({picture, header, message, answers, open, onC
                         <TextField
                             error={correct !== null && !correct}
                             id="outlined-text"
-                            label="Answer Here (・⊝・)"
+                            label="Answer Here"
                             onChange={(event) => setInfo(event.target.value)}
                             // helperText="Incorrect entry."
                         />
@@ -38,6 +38,7 @@ export default function InputModal({picture, header, message, answers, open, onC
                             console.log(info)
                             if (answers.includes(info))
                             {
+                                setCorrect(true)
                                 onClose()
                             }
                             else

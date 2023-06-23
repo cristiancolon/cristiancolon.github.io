@@ -26,7 +26,7 @@ export function Model(props) {
           onClick={() => setModalSettings([
             '/hoodiePic.JPG',
             'Mofin the Great Corgo,',
-            'Como sabes, corgis are goated y they deserve everything in the world. However, la primera vez que salimos, mi ultra mega slick rizz fue interrumpido por otro animal que fue the highlight of the night. Which animal was it?. Cuando sepas el answer clickea el Fantasma del Fantasmeo y escribe the answer.',
+            'Como sabes, corgis are goated y they deserve everything in the world. However, la primera vez que salimos, mi ultra mega slick rizz fue interrumpido por otro animal que fue the highlight of the night. Which animal was it? Cuando sepas el answer clickea el Fantasma del Fantasmeo y escribe the answer.',
             'primary',
             'Onwards Compa...',
             true,
@@ -202,6 +202,23 @@ export function Model(props) {
               event.eventObject.scale.set(1/1.07, 1/1.07, 1/1.07)
               event.eventObject.material = new MeshBasicMaterial(materials["birch_red_mat.001"])
             }}
+            onClick={() => {
+              setInputModalSettings([
+              '/goatPic.jpeg', 
+              'The Big Ass Tree: What is the answer?', 
+              'Duck, Duck,...', 
+              ['goose', 'Goose', 'ganso', 'Ganso'],
+              true,])
+              setModalSettings([
+                '/besis.jpeg',
+                'Da Big Ass Tree,',
+                'Ya estamos on the latter end de este scavenger hunt y you may have noticed que no te he dicho qué es lo que estás hunting. Thankfully, you will soon know your last destination. Pero hablando de destinations, en nuestro first date, we went to a very special place, Canóvanas. En el arcade, con nuestros gamer skills we won hella tickets y nos llevamos some stuff. Specifically, qué fue lo que conseguimos para hacernos en MIT juntos? Cuando sepas el answer clickea a La Ballena.',
+                'secondary',
+                'To da whale 🐋...',
+                false,
+              ])
+            }}
+
             castShadow
             receiveShadow
             geometry={nodes["birch_red_mat_001-material014"].geometry}
@@ -285,13 +302,13 @@ export function Model(props) {
                 setInputModalSettings([
                 '/oop.jpeg', 
                 'Fantasma del Fantasmeo: What is the answer?', 
-                'Vamos a ver si esas neuronas todavía se acuerdan del Great Sanju Fumble of March 19th, 2022.', 
+                'Vamos a ver si todavía te acuerdas del Gran Sanju Fumble of March 19th 🐈.', 
                 ['gato', 'Gato', 'cat', 'Cat'],
                 true,])
                 setModalSettings([
                   '/overload.jpeg',
                   'Fantasma del Fantasmeo,',
-                  'You got it right, felicidades! Te acuerdas de todas esas noches de la semana pasada que me tardaba en llamarte, this is what I was doing. Pero you could say que ya "Aquí no hay fantasmeo" (jaja funny laugh). Averigua de dónde es ese quote and what is the username de la cuenta whose bio says that? Cuando estés lista clickea en el House of Shrooms',
+                  'You got it right, felicidades! Te acuerdas de todas esas noches de la semana pasada que me tardaba en llamarte y te decía que I was working, this is what I was doing. Pero ya no más nebuleo. Hablando de nubes, hay cierto municipio de PR que se encuentra a grandes alturas con el cual tenemos historia. Uno que según usted tiene tremendas playas. Qué pueblo será ese? Cuando sepas el answer clickea en el Shroom House.',
                   'secondary',
                   'Bon Voyage...',
                   false,
@@ -598,17 +615,17 @@ export function Model(props) {
             }}
             onClick={() => {
               setInputModalSettings([
-              '/creme.jpg', 
-              'House of Shrooms: What is the answer?', 
-              'Voy a ti you got this └(＾＾)┐', 
-              ['TOTASPR', '@cremebruleelovers470', 'cremebruleelovers470', 'totaspr'],
+              '/brava.jpeg', 
+              'Shroom House: What is the answer?', 
+              'Voy a ti you got this <3', 
+              ['Aibonito', 'aibonito'],
               true,])
               setModalSettings([
                 '/arrebato.JPG',
-                'House of Shrooms,',
-                'Second in a row? Woot Woot! Bienvenida al House of Shrooms. Drugs, sometimes we love them, sometimes we hate them.',
+                'Shroom House,',
+                "Woot Woot! Bienvenida al Shroom House. Drugs, sometimes they're great, sometimes not so much. Te acuerdas de la vez que llegué a tu cuarto on shrooms? On that note, ese día fui a Commons con Miguel y me acordé de la vez que we went allí on a little date y vimos una nena persiguiendo a unos birds? What kind of bird was it? Cuando sepas el answer clickea Da Big Ass Tree...",
                 'primary',
-                '(⌐■_■)',
+                'Continue (⌐■_■)...',
                 false,
               ])
             }}
@@ -2311,6 +2328,22 @@ export function Model(props) {
               event.eventObject.material = new MeshBasicMaterial(materials.SpermWhale)
               crownRef.current.scale.set(1/1.07, 1/1.07, 1/1.07)
               crownRef.current.material = new MeshBasicMaterial(materials["birch_red_mat.001"])
+            }}
+            onClick={() => {
+              setInputModalSettings([
+              '/iconica.jpeg', 
+              'La Ballenota: What is the answer?', 
+              'I have a very permanent one...', 
+              ['tatoos', 'tatuaje', 'Tatuaje', 'Tatoos', 'tatuajes', 'Tatuajes', 'Tatoo', 'tatoo'],
+              true,])
+              setModalSettings([
+                '/besis.jpeg',
+                'La Ballenota,',
+                'Ya estamos on the latter end de este scavenger hunt y you may have noticed que no te he dicho qué es lo que estás hunting. Thankfully, you will soon know your last destination. Pero hablando de destinations, en nuestro first date, we went to a very special place, Canóvanas. En el arcade, con nuestros gamer skills we won hella tickets y nos llevamos some stuff. Specifically, qué fue lo que conseguimos para hacernos en MIT juntos? Cuando sepas el answer clickea a La Ballenota.',
+                'secondary',
+                'To da whale 🐋...',
+                false,
+              ])
             }}
             castShadow
             receiveShadow
