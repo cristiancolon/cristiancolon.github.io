@@ -211,7 +211,7 @@ export function Model(props) {
               setModalSettings([
                 '/besis.jpeg',
                 'Da Big Ass Tree,',
-                'Ya estamos on the latter end de este scavenger hunt y you may have noticed que no te he dicho qué es lo que estás hunting. Thankfully, you will soon know your last destination. Pero hablando de destinations, en nuestro first actual date, we went to a very special place, Canóvanas. En el arcade, con nuestros gamer skills we won hella tickets y nos llevamos some stuff. Specifically, qué fue lo que conseguimos para hacernos en MIT juntos? Cuando sepas el answer clickea a La Ballena.',
+                'Ya estamos on the latter end de este scavenger hunt y you may have noticed que no te he dicho qué es lo que estás hunting. Thankfully, you will soon know your last destination. Pero hablando de destinations, en nuestro first actual date, we went to a very special place, Canóvanas. En el arcade, con nuestros gamer skills we won hella tickets y nos llevamos some stuff. Specifically, qué fue lo que conseguimos para hacernos en MIT juntos? Cuando sepas el answer clickea a La Ballenota.',
                 'secondary',
                 'To da whale 🐋...',
                 false,

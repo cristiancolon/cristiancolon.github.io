@@ -60,7 +60,8 @@ body,
   }
   
   .content {
-    font-family: 'Comic Sans', cursive;
+    font-family: 'Courgette', cursive;
+    font-size: 17.25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
