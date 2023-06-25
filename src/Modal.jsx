@@ -12,9 +12,6 @@ export default function Modal({picture, header, message, buttonColor, buttonMess
             <div className="modalContainer">
                 <img src={picture} alt=""/>
                 <div className="modalRight">
-                    <div className="closeBtn">
-                        <Button variant="text" onClick={onClose}>X</Button>
-                    </div>
                     <div className="content">
                         <h2>{header}</h2>
                         <p>{message}</p>
