@@ -571,7 +571,7 @@ export function Model(props) {
               setModalSettings([
                 '/iconica.jpeg',
                 'El Castillo Princesoso,',
-                "FELICIDES!! llegaste al final. Maybe se te hizo difícil, pero probablemente fue un mame. Tu memoria es mucho mejor que la mía for these things. Anyways, hay algo que quiero que leas cuando estés sola y tranquila, así que dale al botón para que lo puedas download y cuando acabes con tus festivities, which I hope que la pases cb, dale un look. Anyways, congrats por llegar a tus 19 y have great day. Te amo.",
+                "FELICIDADES!! llegaste al final. Maybe se te hizo difícil, pero probablemente fue un mame. Tu memoria es mucho mejor que la mía for these things. Anyways, hay algo que quiero que leas cuando estés sola y tranquila, así que dale al botón para que lo puedas download y cuando acabes con tus festivities, which I hope que la pases cb, dale un look. Anyways, congrats por llegar a tus 19 y have great day. Te amo.",
                 'secondary',
                 'Download super secret file 😶‍🌫️...',
                 false,
