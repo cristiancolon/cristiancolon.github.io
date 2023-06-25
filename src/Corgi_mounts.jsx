@@ -7,9 +7,8 @@ Source: https://sketchfab.com/3d-models/corgi-mounts-be2cea19fdab4c03a79ff3f5116
 Title: corgi mounts
 */
 
-import React, { useRef } from 'react'
+import React from 'react'
 import { useGLTF } from '@react-three/drei'
-import { useFrame } from '@react-three/fiber'
 import { MeshBasicMaterial } from 'three'
 
 export default function CorgiMounts(props) {

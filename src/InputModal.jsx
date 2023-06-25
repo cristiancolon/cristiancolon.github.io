@@ -35,7 +35,6 @@ export default function InputModal({picture, header, message, answers, open, onC
                             // helperText="Incorrect entry."
                         />
                         <Button color='secondary' variant="outlined" onClick={()=>{
-                            console.log(info)
                             if (answers.includes(info))
                             {
                                 setCorrect(true)
